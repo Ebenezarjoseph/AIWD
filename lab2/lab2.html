@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration & Promotional Portal</title>
+    <link rel="stylesheet" href="lab2.css">
+</head>
+<body>
+    <header>
+        <h1>Online Event Registration & Promotional Portal</h1>
+    </header>
+    <main>
+        <section id="event-details">
+            <h2>Upcoming Event: Tech Conference 2023</h2>
+            <p>Join us for an exciting day of technology talks, workshops, and networking opportunities.</p>
+            
+            <h3>Event Banner</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdjZ7MrB0zRadWzueF60OusHSd4xm56-tPQ&s" alt="Event Banner">
+            
+            <h3>Promotional Video</h3>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <h3>Background Audio</h3>
+            <audio controls autoplay loop>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section id="registration">
+            <h2>Register for the Event</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                
+                <label>Gender:</label>
+                <div class="gender-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                
+                <label for="category">Event Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="talk">Talk</option>
+                    <option value="networking">Networking</option>
+                </select>
+                
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <label for="resume">Upload Resume (optional):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
